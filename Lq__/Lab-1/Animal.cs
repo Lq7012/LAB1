@@ -4,9 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System;
-using System.Threading;
-
 namespace Lab_1
 {
     internal class Animal : IPatient
@@ -28,7 +25,7 @@ namespace Lab_1
             VarAge = Console.ReadLine();
         }
 
-        public void Action()
+        public void PerformAction()
         {
             Console.Write("Введіть дію тварини (їсть, спить, грається і т.д.): ");
             VarAction = Console.ReadLine();
@@ -44,3 +41,4 @@ namespace Lab_1
         }
     }
 }
+ 
