@@ -10,7 +10,7 @@ namespace Lab_1
     {
         public void Name();
         public void Age();
-        public void Disease();
+        public void Action();
         public void Results();
 
     }
