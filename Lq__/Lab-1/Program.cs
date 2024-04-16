@@ -1,57 +1,48 @@
-﻿using Lab_1;
+using System;
+
 namespace Lab_1
 {
     internal class Program
     {
-        
         public static void Main()
         {
             // Виконувальний файл
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.Write("1 - Собака, 2 - Тварина, 3 - Кіт, 4 - Своя тварина: ");
-            string patient;
-            patient = Console.ReadLine();
-            if (patient == "1") 
+            string choice = Console.ReadLine();
+            if (choice == "1") 
             {
-                var VarHuman = new Dog();
-                VarHuman.Name();
-                VarHuman.Age();
-                VarHuman.Action();
-                VarHuman.Results();
+                var dog = new Dog();
+                dog.Name();
+                dog.Age();
+                dog.PerformAction();
+                dog.Results();
             }
-            else if (patient == "2") 
+            else if (choice == "2") 
             {
-                var VarAnimal = new Animal();
-                VarAnimal.Name();
-                VarAnimal.Age();
-                VarAnimal.Action();
-                VarAnimal.Results();
+                var animal = new Animal();
+                animal.Name();
+                animal.Age();
+                animal.PerformAction();
+                animal.Results();
             }
-            else if (patient == "3") 
+            else if (choice == "3") 
             {
-                var VarCat = new Cat();
-                VarCat.Name();
-                VarCat.Age();
-                VarCat.Action();
-                VarCat.Results();
+                var cat = new Cat();
+                cat.Name();
+                cat.Age();
+                cat.PerformAction();
+                cat.Results();
             }
-            else if (patient == "4") 
+            else if (choice == "4") 
             {
-                var VarAnimal = new TypeOfAnimal();
-                VarAnimal.KindOfAnimals();
-                VarAnimal.Name();
-                VarAnimal.Age();
-                VarAnimal.Action();
-                VarAnimal.Results();
+                // Введіть код для вашого класу тут
+                Console.WriteLine("Реалізація для своєї тварини ще не визначена");
             }
             else
             {
                 Console.WriteLine("Число введено неправильно");
             }
-            
-            var Animal = new Animal();
-            var Cat = new Cat();
-            var TypeOfAnimal = new TypeOfAnimal(); 
         }
     }
 }
