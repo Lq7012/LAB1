@@ -23,7 +23,7 @@ namespace Lab_1
             Console.Write("Введіть вік кота: ");
             this.VarAge = Console.ReadLine();
         }
-        public void Action()
+        public void PerformAction()
         {
             Console.Write("Введіть дію кота: ");
             this.VarAction = Console.ReadLine();
