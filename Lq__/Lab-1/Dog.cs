@@ -10,32 +10,36 @@ namespace Lab_1
 {
     internal class Dog : IPatient
     {
-        // Клас людини
+        // Клас собаки
         public string VarName { get; set; }
         public int VarAge { get; set; }
         public string VarAction { get; set; }
+        
         public void Name()
         {
             Console.Write("Введіть ім'я собаки: ");
-            this.VarName = Console.ReadLine();
+            VarName = Console.ReadLine();
         }
+        
         public void Age()
         {
             Console.Write("Введіть вік собаки: ");
-            this.VarAge = Convert.ToInt32(Console.ReadLine());
+            VarAge = Convert.ToInt32(Console.ReadLine());
         }
-        public void Action()
+        
+        public void PerformAction()
         {
             Console.Write("Дію собаки: ");
-            this.VarAction = Console.ReadLine();
+            VarAction = Console.ReadLine();
         }
+        
         public void Results() 
         {
             Console.Clear();
-            Console.WriteLine("ім'я собаки: " + VarName + "\nвік собаки: " + VarAge + "\nДія собаки: " + VarAction);
+            Console.WriteLine("Ім'я собаки: " + VarName + "\nВік собаки: " + VarAge + "\nДія собаки: " + VarAction);
             Console.WriteLine("Лікування... ");
             Thread.Sleep(2000);
-            Console.WriteLine("дія собки " + '"' + VarAction + '"' + ": " + "завершена.");
+            Console.WriteLine("Дія собаки " + '"' + VarAction + '"' + ": " + "завершена.");
             Console.ReadLine();
         }
     }
